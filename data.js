@@ -99,3 +99,62 @@ sabun.pembuat = {
 }
 
 console.log(sabun.pembuat.namaPT)
+
+// 5. booleam = suatu nilai yg berisikan benar salah
+const benar = true
+const salah = false
+
+// kondisi dan bernilai benar = B & B => B, selain salah
+// kondisi atau bernilai salah = S or S => S, selain benar
+
+// if coonditional
+const kondisi = false
+if (kondisi) {
+    // melakukan aksi hanya jika benar
+    console.log('kondisi bernilai benar')
+} else {
+    // untuk kondisi laiinnya
+    console.log('jalanan kondisi lainnya')
+}
+
+// pilihan
+// if (condition) {
+    
+// } else if (condition) {
+// } else if (condition) {
+// } else if (condition) {
+// } else if (condition) {
+// } else if (condition) {
+// } else if (condition) {
+// } else if (condition) {
+// } else {
+
+// }
+
+// b. menjalankan semua kondisi
+// if (condition) {
+
+// }
+
+// if (condition) {
+
+// }
+
+//  c. nested => berkelanjutan
+// if (condition) {
+// if (condition){
+
+// }
+// }
+
+// 6 Comparation (perbandingan)
+// bentuk perbandingan spt matematika
+// >, <, >=, <=, ==
+
+const nilai = 70
+
+if(nilai == 90) {
+    console.log('Nilai Anda adalah:', nilai)
+}   else if (nilai <75){
+    console.log('Nilai Anda di Bawah KKm')
+}
