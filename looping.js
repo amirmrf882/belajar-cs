@@ -125,3 +125,67 @@ for (let i = 0; i < sabun.length; i++) {
 console.log(totalHarusdibayar)
 console.log('total kembalian', (uangPelanggan-totalHarusdibayar))
 
+// saat ujian sekolah diketahui beberapa nilai mahasiswa adalah sebagai berikut, arif 85, jafar 90, 
+// harya 82, zaid 60, munar 76, izza 75
+// dan eriel 50 serta sebas 63. Jika kkm 73, berapa anak yang lulus kkm dan berapa rata rata 
+// yg dibawah kkm
+
+const nilaiUjian = [
+    {
+        nama: 'arif',
+        nilai: 85
+    },
+    {
+        nama: 'jafar',
+        nilai: 90
+    },
+    {
+        nama: 'harya',
+        nilai: 82
+    },
+    {
+        nama: 'zaid',
+        nilai: 60
+    },
+    {
+        nama: 'munar',
+        nilai: 76
+    },
+    {
+        nama: 'izza',
+        nilai: 75
+    },
+    {
+        nama: 'eriel',
+        nilai: 50
+    },
+    {
+        nama: 'sebas',
+        nilai: 63
+    }
+]
+
+const kkm = 73
+const lulusUjian = []
+const gagalUjian = []
+let totalnilaiBawahkkm = 0
+
+
+for (let i = 0; i < nilaiUjian.length; i++) {
+    const namaNilai = nilaiUjian[i];
+    
+    if (namaNilai.nilai > kkm) {
+        lulusUjian.push(namaNilai.nama)
+        
+    } else if (namaNilai.nilai <= kkm) {
+        gagalUjian.push(namaNilai.nama)
+        
+        totalnilaiBawahkkm = namaNilai.nilai + totalnilaiBawahkkm
+}
+}
+
+console.log('rata-rata nilai dibawah kkm', Math.floor(totalnilaiBawahkkm / gagalUjian.length))
+
+console.log(lulusUjian)
+
+diketahui terdapat 
